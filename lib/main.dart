@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:projek1/Screen/page_cache.image.dart';
 import 'package:projek1/Screen/page_dua.dart';
+import 'package:projek1/Screen/page_gambar.dart';
 import 'package:projek1/Screen/page_satu.dart';
 import 'package:projek1/Screen/page_tiga.dart';
 import 'package:projek1/Screen/page_empat.dart';
+import 'package:projek1/Screen/page_url_image.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +46,7 @@ class PageOne extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text("Selamat Datang di Flutter App pertama Mi2b Raysha"),
+            Text("Selamat Datang di Flutter App pertama Mi2b Mutia"),
             MaterialButton(
               onPressed: () {
                 Navigator.push(context,
@@ -95,9 +98,43 @@ class PageOne extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
             ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PageGambar()));
+              },
+              color: Colors.purple,
+              child: Text(
+                'Page gambar',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PageUrlImage()));
+              },
+              color: Colors.purple,
+              child: Text(
+                'Page Url Image',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PageChache()));
+              },
+              color: Colors.purple,
+              child: Text(
+                'Page cache image',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
