@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projek1/Screen/latihan_form/FromDosen.dart';
+import 'package:projek1/Screen/latihan_yummy/page_splash_screen.dart';
 import 'package:projek1/Screen/naf_bar/page_tab_bar.dart';
 import 'package:projek1/Screen/page_cache.image.dart';
 import 'package:projek1/Screen/page_dua.dart';
@@ -11,8 +12,9 @@ import 'package:projek1/Screen/page_simple_login.dart';
 import 'package:projek1/Screen/page_tiga.dart';
 import 'package:projek1/Screen/page_empat.dart';
 import 'package:projek1/Screen/page_url_image.dart';
-
 import 'Screen/DetailDataDosen/page_data_dosen.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -53,7 +55,7 @@ class PageOne extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text("Selamat Datang di Flutter App pertama Mi2b Mutia"),
+            Text("Selamat Datang di Flutter App pertama MI 2B Mutia"),
             MaterialButton(
               onPressed: () {
                 Navigator.push(context,
@@ -171,17 +173,17 @@ class PageOne extends StatelessWidget {
 
               ),
             ),
-        MaterialButton(onPressed: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)
-          => PageTabBar()
-          ));
-        },
-          color: Colors.purple,
-          child: Text('Page Tab Bar',
-              style: TextStyle(fontSize: 14, color: Colors.white)
+            MaterialButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageTabBar()
+              ));
+            },
+              color: Colors.purple,
+              child: Text('Page Tab Bar',
+                  style: TextStyle(fontSize: 14, color: Colors.white)
 
-          ),
-        ),
+              ),
+            ),
 
             MaterialButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)
@@ -189,7 +191,7 @@ class PageOne extends StatelessWidget {
               ));
             },
               color: Colors.purple,
-              child: Text('Form dosen',
+              child: Text('Form Dosen',
                   style: TextStyle(fontSize: 14, color: Colors.white)
 
               ),
@@ -200,11 +202,25 @@ class PageOne extends StatelessWidget {
               ));
             },
               color: Colors.purple,
-              child: Text('Tab DATA DOSEN',
+              child: Text('Tab Data Dosen',
                   style: TextStyle(fontSize: 14, color: Colors.white)
 
               ),
             ),
+
+            MaterialButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => SplashScreen()
+              ));
+            },
+              color: Colors.purple,
+              child: Text('Page Yummy Apps',
+                  style: TextStyle(fontSize: 14, color: Colors.white)
+
+              ),
+            ),
+
+
 
 
           ],
@@ -213,4 +229,3 @@ class PageOne extends StatelessWidget {
     );
   }
 }
-

@@ -53,13 +53,13 @@ class _PageRegisterState extends State<PageRegister> {
                 CostumeInput(
                     labelInput: "Username",
                     controller: username,
-                    hintText: "mutia",
+                    hintText: "",
                     textInputType: TextInputType.name),
                 SizedBox(height: 15,),
                 CostumeInput(
                     labelInput: "Email",
                     controller: email,
-                    hintText: "mut@gmail.com",
+                    hintText: "",
                     textInputType: TextInputType.emailAddress),
                 SizedBox(height: 15,),
                 CostumeInput(
